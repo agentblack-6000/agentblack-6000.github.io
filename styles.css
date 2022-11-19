@@ -1,0 +1,95 @@
+/* Common Selectors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: #0F4C75;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 500;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-size: 1.75rem;
+}
+
+.navigation-font {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 500;
+}
+
+/* Index(Main) */
+
+.text {
+    font-size: 1em;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.turtle-img {
+    margin-left: 1rem;
+    width: 30rem;
+}
+
+/* Leo's Journey */
+.center {
+    text-align: center;
+}
+
+.game {
+    margin: auto 6%;
+}
+
+.game-heading {
+    margin: 2% auto;
+}
+
+.game-link {
+    margin: auto 3%;
+    padding-top: 3%;
+}
+
+/* Trivia */
+.mcq {
+    background-color: #0F4C75;
+    color: white;
+    margin-top: 1%;
+}
+
+.mcq:hover {
+    background-color: #206796;
+    color: white;
+}
+
+.question {
+    padding-top: 3%;
+}
+
+.title {
+    margin-left: 2%;
+    padding-top: 2%;
+    text-align: left;
+}
+
+/* Gallery */
+.gallery-heading {
+    margin: 2% auto;
+    text-align: center;
+}
+
+.gallery {
+    height: 80%;
+    margin-left: 5%;
+    width: 90%;
+}

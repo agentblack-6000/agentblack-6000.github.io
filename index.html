@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <title>Sea Turtles</title>
+
+</head>
+
+<body>
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navigation navbar-dark navigation-font"
+        style="background-color: #0F4C75;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Sea Turtles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                    <a class="nav-link" href="trivia.html">Turtle Trivia</a>
+                    <a class="nav-link" href="leos_journey.html">Scratch Game</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Carousel -->
+    <div id="turtleCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#turtleCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#turtleCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#turtleCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#turtleCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#turtleCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#turtleCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#turtleCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/loggerhead.jpeg" class="d-block w-100" alt="..." height="600" width="800">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Loggerhead Sea Turtles</h5>
+                    <p>The largest of all hard-shelled turtles, the Loggerhead</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/hawksbill.jpeg" class="d-block w-100" alt="..." height="600" width="800">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hawksbill Sea Turtles</h5>
+                    <p>Named after their pointed beaks, with colorful, patterned shells</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/flatback.jpeg" class="d-block w-100" alt="..." height="600" width="800">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Flatback Sea Turtles</h5>
+                    <p>Flatback turtles adults reach an average of 90 kg(198 pounds)</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/green.jpeg" class="d-block w-100" alt="..." height="600" width="800">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Green Sea Turtles</h5>
+                    <p>They are herbivores, and mostly eat seagrass and algae.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/kempRidley.jpeg" class="d-block w-100" alt="..." height="600" width="800">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kemp's Ridley Sea Turtles</h5>
+                    <p>Smallest sea turtles in the world, and the rarest.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/leatherback.jpeg" class="d-block w-100" alt="..." height="600" width="800">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Leatherback Sea Turtles</h5>
+                    <p>Leatherback turtles are the only turtle species in the world that don't have a hard shell and
+                        scales.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/olive.jpeg" class="d-block w-100" alt="..." height="600" width="800">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Olive Ridley Sea Turtles</h5>
+                    <p>The most abundant sea turtle species in the world</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#turtleCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#turtleCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Facts about sea turtles -->
+    <br>
+    <div class="text">
+        <h1>Facts About Sea Turtles</h1>
+        <p>
+            Sea turtles are some of the most fascinating creatures on Earth, with distinct colored shells
+            and swimming patterns. As reptiles, they breathe air but have the ability to stay submerged
+            for hours at a time, and even sleep underwater. Sea turtles have similar lifespans to humans,
+            and take decades to reach maturity. The oldest sea turtle is said to be 400 years old! (the sea
+            turtle from Finding Nemo, Crush, is 150 years old)
+            There are 7 species of sea turtles-
+        <ul>
+            <li>Flatback</li>
+            <li>Green</li>
+            <li>Leatherback</li>
+            <li>Loggerhead</li>
+            <li>Kemp's ridley</li>
+            <li>Olive ridley</li>
+            <li>Hawksbill</li>
+        </ul>
+        <h6>Fun fact: Kemp's ridley is named after Richard Moore Kemp (1825-1908) of Key West was
+            the first to send a specimen to Samuel Garman at Harvard, but the origin of the name "ridley" itself is
+            unknown.
+        </h6>
+        </p>
+        <p>Credits to Wikipedia</p>
+        <p>Check out <a href="gallery.html">Turtle Image Gallery</a>, <a href="trivia.html">Turtle Trivia</a>, and the
+            <a href="leos_journey.html">Scratch Game</a>!
+        </p>
+        <h2>Flatback Sea Turtles</h2>
+        <p>
+            Click <a href="https://en.wikipedia.org/wiki/Flatback_sea_turtle">here</a> for the Wikipedia page.
+            <br>
+        <ul>
+            <li>
+                The Australian flatback sea turtle is a species of sea turtle in the family Cheloniidae.
+            </li>
+            <li>
+                The species is endemic to the sandy beaches and shallow coastal waters of the Australian continental
+                shelf.
+            </li>
+            <li>
+                This turtle gets its common name from the fact that its shell has a flattened or lower dome than the
+                other sea turtles.
+            </li>
+            <li>
+                Flatback turtles primarily eat soft-bodied prey, such as jellyfish, sea cucumbers and soft corals.
+            </li>
+        </ul>
+        <img src="images/flatback2.jpeg" class="turtle-img" alt="Flatback turtle picture">
+        </p>
+
+        <h2>Green Sea Turtles</h2>
+        <p>
+            Click <a href="https://en.wikipedia.org/wiki/Green_sea_turtle">here</a> for the Wikipedia page.
+            <br>
+        <ul>
+            <li>
+                The green sea turtle, also known as the green turtle, black turtle or Pacific green turtle, is a species
+                of large sea turtle of the family Cheloniidae.
+            </li>
+            <li>
+                It is the only species in the genus Chelonia.
+            </li>
+            <li>
+                Its range extends throughout tropical and subtropical seas around the world, with two distinct
+                populations in the Atlantic and Pacific Oceans, but it is also found in the Indian Ocean.
+            </li>
+            <li>
+                Unlike other members of its family, such as the hawksbill sea turtle, green sea turtles are mostly
+                herbivorous.
+            </li>
+        </ul>
+        <img src="images/green2.jpeg" class="turtle-img" alt="Flatback turtle picture">
+        </p>
+
+        <h2>Leatherback Sea Turtles</h2>
+        <p>
+            Click <a href="https://en.wikipedia.org/wiki/Leatherback_sea_turtle">here</a> for the Wikipedia page.
+            <br>
+        <ul>
+            <li>
+                The leatherback sea turtle, sometimes called the lute turtle or leathery turtle or simply the luth, is
+                the largest of all living turtles and the heaviest non-crocodilian reptile, reaching lengths of up to
+                1.8 metres and weights of 500 kilograms.
+            </li>
+            <li>
+                It is the only living species in the genus Dermochelys and family Dermochelyidae.
+            </li>
+            <li>
+                It can easily be differentiated from other modern sea turtles by its lack of a bony shell; instead, its
+                carapace is covered by oily flesh and flexible, leather-like skin, for which it is named.
+            </li>
+            <li>
+                Pacific leatherbacks migrate about 6,000 mi (9,700 km) across the Pacific from their nesting sites in
+                Indonesia to eat California jellyfish
+            </li>
+        </ul>
+        <img src="images/leatherback2.jpeg" class="turtle-img" alt="Flatback turtle picture">
+        </p>
+
+        <h2>Loggerhead Sea Turtles</h2>
+        <p>
+            Click <a href="https://en.wikipedia.org/wiki/Loggerhead_sea_turtle">here</a> for the Wikipedia page.
+            <br>
+        <ul>
+            <li>
+                The loggerhead sea turtle is a species of oceanic turtle distributed throughout the world. It is a
+                marine reptile, belonging to the family Cheloniidae.
+            </li>
+            <li>
+                The average loggerhead measures around 90 cm in carapace length when fully grown.
+            </li>
+            <li>
+                The skin ranges from yellow to brown in color, and the shell is typically reddish brown.
+            </li>
+            <li>
+                The loggerhead sea turtle is found in the Atlantic, Pacific, and Indian Oceans, as well as the
+                Mediterranean Sea.
+                It spends most of its life in saltwater and estuarine habitats, with females briefly coming ashore to
+                lay eggs.
+            </li>
+        </ul>
+        <img src="images/loggerhead2.jpeg" class="turtle-img" alt="Flatback turtle picture">
+        </p>
+
+        <h2>Kemp's ridley Sea Turtles</h2>
+        <p>
+            Click <a href="https://en.wikipedia.org/wiki/Kemp%27s_ridley_sea_turtle">here</a> for the Wikipedia page.
+            <br>
+        <ul>
+            <li>
+                Kemp's ridley sea turtle, also called the Atlantic ridley sea turtle, is the rarest species of sea
+                turtle and is the world's most endangered species of sea turtle
+            </li>
+            <li>
+                It is one of two living species in the genus Lepidochelys.
+            </li>
+            <li>
+                This species of turtle is called Kemp's ridley because Richard Moore Kemp (1825-1908) of Key West was
+                the first to send a specimen to Samuel Garman at Harvard, but the origin of the name "ridley" itself is
+                unknown.
+            </li>
+            <li>
+                Kemp's ridley is the smallest of all sea turtle species, reaching maturity at 58-70 cm (23-28 in)
+                carapace length and weighing only 36-45 kg (79-99 lb).
+            </li>
+        </ul>
+        <img src="images/kempRidley2.jpeg" class="turtle-img" alt="Flatback turtle picture">
+        </p>
+
+        <h2>Olive ridley Sea Turtles</h2>
+        <p>
+            Click <a href="https://en.wikipedia.org/wiki/Olive_ridley_sea_turtle">here</a> for the Wikipedia page.
+            <br>
+        <ul>
+            <li>
+                The olive ridley sea turtle, also known commonly as the Pacific ridley sea turtle, is a species of
+                turtle in the family Cheloniidae.
+            </li>
+            <li>
+                This turtle and the related Kemp's ridley turtle are best known for their unique synchronised mass
+                nestings called arribadas, where thousands of females come together on the same beach to lay eggs.
+            </li>
+            <li>
+                The olive ridley is predominantly carnivorous, especially in immature stages of its lifecycle. Common
+                prey items include jellyfish, tunicates, salps, sea urchins, bryozoans, bivalves, snails, shrimp, crabs,
+                rock lobsters, and sipunculid worms.
+            </li>
+            <li>
+                The olive ridley turtle has a circumtropical distribution, living in tropical and warm waters of the
+                Pacific and Indian Oceans from India, Arabia, Japan, and Micronesia south to southern Africa, Australia,
+                and New Zealand.
+            </li>
+        </ul>
+        <img src="images/olive2.jpeg" class="turtle-img" alt="Flatback turtle picture">
+        </p>
+
+        <h2>Hawksbill Sea Turtles</h2>
+        <p>
+            Click <a href="https://en.wikipedia.org/wiki/Hawksbill_sea_turtle">here</a> for the Wikipedia page.
+            <br>
+        <ul>
+            <li>
+                The hawksbill sea turtle is a critically endangered sea turtle belonging to the family Cheloniidae.
+            </li>
+            <li>
+                It is the only extant(living) species in the genus Eretmochelys.
+            </li>
+            <li>
+                The species has a global distribution, that is largely limited to tropical and subtropical marine and
+                estuary ecosystems.
+            </li>
+            <li>
+                While they are omnivorous, sea sponges are their principal food; they constitute 70-95% of the turtles'
+                diets.
+            </li>
+        </ul>
+        <img src="images/hawksbill2.jpeg" class="turtle-img" alt="Flatback turtle picture">
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <footer>
+            Copyright &#169; Raghav Halan 2022
+            <br>
+            halan.raghav@gmail.com
+        </footer>
+    </div>
+</body>
+
+</html>

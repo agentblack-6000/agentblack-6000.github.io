@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+
+  <title>Turtle Trivia</title>
+
+  <!-- 
+      Javascript Logic to add Event Listeners to each button, and turns background color green if the 
+      correct answer was selected
+    -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      let buttons = document.querySelectorAll(".mcq");
+
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+          if (buttons[i].id == "answer") {
+            buttons[i].style.backgroundColor = "green";
+          }
+          else {
+            buttons[i].style.backgroundColor = "red";
+          }
+        });
+      }
+
+    });
+  </script>
+</head>
+
+<body>
+  
+  <!-- Bootstrap Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top navigation navbar-dark navigation-font"
+    style="background-color: #0F4C75;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Sea Turtles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+          <a class="nav-link" href="trivia.html">Turtle Trivia</a>
+          <a class="nav-link" href="leos_journey.html">Scratch Game</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Trivia Questions -->
+  <div class="title">
+    <h1>Time to test your Sea Turtle knowledge!</h1>
+    <h4>Make sure to read the <a href="index.html">main page</a></h4>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h3 class="question">Which of the following is the only extant(living) species in the genus Eretmochelys?</h3>
+      <button class="mcq btn col col-6" id="answer">Hawksbill Sea Turtles</button>
+      <button class="mcq btn col col-6">Green Sea Turtles</button>
+      <button class="mcq btn col col-6">Loggerhead Sea Turtles</button>
+      <button class="mcq btn col col-6">Leatherback Sea Turtles</button>
+      <br>
+
+      <h3 class="question">Which of the following is the only living species in the genus Dermochelys and family
+        Dermochelyidae?</h3>
+      <button class="mcq btn col col-6">Hawksbill Sea Turtles</button>
+      <button class="mcq btn col col-6">Green Sea Turtles</button>
+      <button class="mcq btn col col-6">Loggerhead Sea Turtles</button>
+      <button class="mcq btn col col-6" id="answer">Leatherback Sea Turtles</button>
+      <br>
+
+      <h3 class="question">Which of the following is the rarest species of sea turtle?</h3>
+      <button class="mcq btn col col-6">Olive Ridley Sea Turtles</button>
+      <button class="mcq btn col col-6" id="answer">Kemp's Ridley Sea Turtles</button>
+      <button class="mcq btn col col-6">Flatback Sea Turtles</button>
+      <button class="mcq btn col col-6">Leatherback Sea Turtles</button>
+      <br>
+
+      <h3 class="question">Which sea turtle is also known as the "green turtle"?</h3>
+      <button class="mcq btn col col-6">Hawksbill Sea Turtles</button>
+      <button class="mcq btn col col-6" id="answer">Green Sea Turtles</button>
+      <button class="mcq btn col col-6">Loggerhead Sea Turtles</button>
+      <button class="mcq btn col col-6">Leatherback Sea Turtles</button>
+      <br>
+
+      <h3 class="question">The Australian flatback sea turtle is a species of sea turtle in the family __________.</h3>
+      <button class="mcq btn col col-6" id="answer">Cheloniidae</button>
+      <button class="mcq btn col col-6">Dermochelyidae</button>
+      <button class="mcq btn col col-6">Testudines</button>
+      <button class="mcq btn col col-6">Leviathanochelys</button>
+      <br>
+
+      <h3 class="question">__________ turtle is named after Richard Moore Kemp.</h3>
+      <button class="mcq btn col col-6">Kemp Sea Turtles</button>
+      <button class="mcq btn col col-6">Moore's Ridley Sea Turtles</button>
+      <button class="mcq btn col col-6">Ridley Sea Turtles</button>
+      <button class="mcq btn col col-6" id="answer">Kemp's Ridley Sea Turtles</button>
+      <br>
+
+      <h3 class="question">Which of the following is called "luth"?</h3>
+      <button class="mcq btn col col-6">Loggerhead Sea Turtles</button>
+      <button class="mcq btn col col-6">Flatback Sea Turtles</button>
+      <button class="mcq btn col col-6" id="answer">Leatherback Sea Turtles</button>
+      <button class="mcq btn col col-6">Olive Ridley Sea Turtles</button>
+      <br>
+
+      <h3 class="question">Which of the following is another name for the Pacific ridley sea turtle?</h3>
+      <button class="mcq btn col col-6">Hawksbill Sea Turtles</button>
+      <button class="mcq btn col col-6">Kemp's Ridley Sea Turtles</button>
+      <button class="mcq btn col col-6" id="answer">Olive Ridley Sea Turtles</button>
+      <button class="mcq btn col col-6">Ridley Sea Turtles</button>
+      <br>
+
+      <h3 class="question">Atlantic ridley sea turtle is the rarest species of sea turtle.</h3>
+      <button class="mcq btn col col-6" id="answer">True</button>
+      <button class="mcq btn col col-6">False</button>
+      <br>
+
+      <h3 class="question">________ is endemic to the sandy beaches and shallow coastal waters of the Australian
+        continental
+        shelf.</h3>
+      <button class="mcq btn col col-6" id="answer">Flatback Sea Turtles</button>
+      <button class="mcq btn col col-6">Kemp's Ridley Sea Turtles</button>
+      <button class="mcq btn col col-6">Loggerhead Sea Turtles</button>
+      <button class="mcq btn col col-6">Leatherback Sea Turtles</button>
+      <br>
+      <br>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <footer>
+      Copyright &#169; Raghav Halan 2022
+      <br>
+      halan.raghav@gmail.com
+    </footer>
+  </div>
+</body>
+
+</html>
